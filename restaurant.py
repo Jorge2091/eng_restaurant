@@ -21,4 +21,4 @@ while promt:
     else:
         print("That is not in a menu, I'm sorry. Please try again. ")
 
-
+print(f"You have chosen {order_list[0]}, {order_list[1]} and {order_list[2]}")
