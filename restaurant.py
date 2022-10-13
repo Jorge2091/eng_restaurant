@@ -2,19 +2,19 @@
 menu = ["chicken soup", "roast duck with rice", "special fried rice", "pizza", "chips", "burger"]
 print("In our menu, we have {}, {}, {}, {}, {} and {}".format(menu[0], menu[1], menu[2], menu[3], menu[4], menu[5]))
 order_list = []
-number = 1
+order_length = 1
 promt = True
 while promt:
     order = input("what would you like to order? ")
     order = order.lower()
     if order in menu:
         order_list.append(order)
-        while number < 3:
+        while order_length < 3:
             order = input("what else? ")
             if order in menu:
                 order_list.append(order)
-                number += 1
-                if number == 2:
+                order_length += 1
+                if order_length == 2:
                     promt = False
             else:
                 print("That is not in the menu, I'm sorry. Please try again. ")
